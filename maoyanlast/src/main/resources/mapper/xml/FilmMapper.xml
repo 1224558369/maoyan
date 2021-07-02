@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huyuya.maoyanlast.mapper.FilmMapper">
+    <select id="selectFilmByConditionPage" resultType="com.huyuya.maoyanlast.entity.Film">
+        SELECT DISTINCT f.*
+        FROM maoyan.`film` f
+        <where>
+            <if test="filmType!=null">
+                and f.`film_type` like concat('%',#{filmType},'%')
+            </if>
+            <if test="filmName!=null">
+                and f.`film_name` like concat('%',#{filmName},'%')
+            </if>
+            <if test="begin!=null">
+                and f.`film_release` > #{begin}
+            </if>
+            <if test="end!=null">
+                and f.`film_release` &lt; #{end}
+            </if>
+        </where>
+    </select>
+</mapper>

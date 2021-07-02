@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/maoyan/maoyan.iml" filepath="$PROJECT_DIR$/maoyan/maoyan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maoyanlast/maoyan (1).iml" filepath="$PROJECT_DIR$/maoyanlast/maoyan (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/maoyanlast/maoyanLast.iml" filepath="$PROJECT_DIR$/maoyanlast/maoyanLast.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huyuya.maoyanlast.mapper.UserMapper">
+    <select id="getUserByName" resultType="com.huyuya.maoyanlast.entity.User">
+        select *
+        from maoyan.user
+        where user_name = #{username};
+    </select>
+    <select id="getAuthorityByUserName" resultType="com.huyuya.maoyanlast.entity.Authority">
+        SELECT a.`auth_id`, a.`auth_alias`, a.`auth_name`, a.`auto_description`
+        FROM maoyan.authority a
+                 JOIN maoyan.role_authority ra ON a.`auth_id` = ra.`auth_id`
+                 JOIN maoyan.role r ON r.`role_id` = ra.`role_id`
+                 JOIN maoyan.role_user ru ON r.`role_id` = ru.`role_id`
+                 JOIN maoyan.USER u ON u.`user_id` = ru.`user_id`
+        WHERE u.`user_name` = #{username}
+    </select>
+</mapper>
