@@ -73,9 +73,51 @@ public class FilmController {
         return R.ok().data(map);
     }
 
+    /**
+     * 添加电影
+     *
+     * @param
+     * @return
+     */
     @PostMapping("/addFilm")
     public R addFilm(@RequestBody Film film) {
         int insert = filmMapper.insert(film);
+        return R.ok();
+    }
+
+    /**
+     * 查询电影信息
+     *
+     * @param
+     * @return
+     */
+    @GetMapping("/getFilm/{id}")
+    public R getFilm(@PathVariable Long id) {
+        Film film = filmMapper.selectById(id);
+        return R.ok().data("film", film);
+    }
+
+    /**
+     * 删除电影
+     *
+     * @param
+     * @return
+     */
+    @DeleteMapping("/{id}")
+    public R deleteFilm(@PathVariable Long id) {
+        int i = filmMapper.deleteById(id);
+        return R.ok();
+    }
+
+    /**
+     * 修改电影
+     *
+     * @param
+     * @return
+     */
+    @PostMapping("/updateFilm")
+    public R updateFilm(@RequestBody Film film) {
+        int i = filmMapper.updateById(film);
         return R.ok();
     }
 }
