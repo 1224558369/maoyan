@@ -9,6 +9,7 @@ D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\mapper\FilmMapper.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\mapper\HallMapper.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\CinemaServiceService.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\vo\CinemaVo.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\VideohallController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\FilmController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\Authority.java
@@ -19,11 +20,12 @@ D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\MaoyanlastApplication.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\mapper\RoleMapper.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\Order.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\utils\ConstantPropertiesUtils.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\impl\RoleServiceImpl.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\commonutils\R.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\OrderController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\HalltypeController.java
-D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\CinemaServiceController.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\QiniuApiController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\impl\HalltypeServiceImpl.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\commonutils\ResultCode.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\CinemaService.java
@@ -33,6 +35,7 @@ D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\mapper\CinemaServiceMapper.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\impl\CinemaServiceImpl.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\config\MyBatisPlusConfig.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\config\JacksonConfig.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\HallController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\AuthorityService.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\Film.java
@@ -49,10 +52,14 @@ D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\impl\OrderServiceImpl.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\RoleUserController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\Halltype.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\impl\QiniuApiServiceImpl.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\exceptionhandler\MaoYanException.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\exceptionhandler\GlobalExceptionHandler.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\Cinema.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\Hall.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\UserService.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\impl\FilmServiceImpl.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\QiniuApiService.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\RoleController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\mapper\AuthorityMapper.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\UserController.java

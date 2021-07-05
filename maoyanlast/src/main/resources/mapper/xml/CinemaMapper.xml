@@ -2,4 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.huyuya.maoyanlast.mapper.CinemaMapper">
 
+    <select id="selectCinemas" resultType="com.huyuya.maoyanlast.entity.Cinema">
+        select *
+        from maoyan.`cinema` c
+        inner join maoyan.`brand` b on c.`brand_id` = b.`brand_id`
+        <where>
+            <if test="cname!=null">
+                c.`cinema_name` like concat('%',#{cname},'%')
+            </if>
+            <if test="bid!=null">
+                and b.`brand_id` = #{bid}
+            </if>
+            <if test="cservice">
+                and c.`cinema_service` like concat('%',#{cservice},'%')
+            </if>
+        </where>
+
+    </select>
 </mapper>

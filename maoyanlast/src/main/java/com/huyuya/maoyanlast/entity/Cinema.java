@@ -1,6 +1,7 @@
 package com.huyuya.maoyanlast.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -11,7 +12,7 @@ import java.io.Serializable;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author huyu
@@ -19,7 +20,7 @@ import java.io.Serializable;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@ApiModel(value="Cinema对象", description="")
+@ApiModel(value = "Cinema对象", description = "")
 public class Cinema implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -31,17 +32,26 @@ public class Cinema implements Serializable {
     @ApiModelProperty(value = "电影院名称")
     private String cinemaName;
 
+    @ApiModelProperty(value = "电影院图片")
+    private String cinemaImg;
+
     @ApiModelProperty(value = "电影院具体位置")
     private String cinemaSite;
 
     @ApiModelProperty(value = "电影院联系电话")
     private String cinemaPhone;
 
+    @ApiModelProperty(value = "电影服务")
+    private String cinemaService;
+
     @ApiModelProperty(value = "0代表其他品牌")
     private Long brandId;
 
     @ApiModelProperty(value = "0:下架 1:上映")
     private Integer cinemaStatus;
+
+    @TableField(exist = false)
+    private String brandName;
 
 
 }
