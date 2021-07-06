@@ -2,4 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.huyuya.maoyanlast.mapper.VideohallMapper">
 
+    <select id="selectVideoHallPage" resultType="com.huyuya.maoyanlast.entity.Videohall">
+        SELECT *
+        FROM maoyan.`videohall` v
+        INNER JOIN maoyan.`halltype` h ON v.`halltype_id` = h.`halltype_id`
+        INNER JOIN maoyan.`cinema` c ON c.`cinema_id` = v.`cinema_id`
+        <where>
+            <if test="cname!=null">
+                c.`cinema_name` like concat('%',#{cname},'%')
+            </if>
+            <if test="htid!=null">
+              and  v.`halltype_id` = #{htid}
+            </if>
+            <if test="vname!=null">
+              and  v.`videohall_name` like concat('%',#{vname},'%')
+            </if>
+        </where>
+    </select>
 </mapper>

@@ -36,6 +36,9 @@ public class Hall implements Serializable {
     @ApiModelProperty(value = "电影id")
     private Long filmId;
 
+    @ApiModelProperty(value = "放映厅id")
+    private Long videohallId;
+
     @ApiModelProperty(value = "放映日期")
     private Date hallDate;
 
@@ -47,9 +50,6 @@ public class Hall implements Serializable {
 
     @ApiModelProperty(value = "语言版本")
     private String hallLanguage;
-
-    @ApiModelProperty(value = "放映厅")
-    private String hallVideo;
 
     @ApiModelProperty(value = "售价")
     private BigDecimal hallPrice;

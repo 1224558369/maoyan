@@ -2,4 +2,10 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.huyuya.maoyanlast.mapper.HalltypeMapper">
 
+    <select id="selectHallTypeAsVideoHall" resultType="com.huyuya.maoyanlast.entity.Halltype">
+        SELECT *
+        FROM maoyan.`videohall` v
+                 INNER JOIN maoyan.`halltype` h ON v.`halltype_id` = h.`halltype_id`
+        WHERE h.`halltype_id` = #{id}
+    </select>
 </mapper>

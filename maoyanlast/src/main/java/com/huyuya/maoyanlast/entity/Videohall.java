@@ -1,6 +1,7 @@
 package com.huyuya.maoyanlast.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -41,5 +42,9 @@ public class Videohall implements Serializable {
     @ApiModelProperty(value = "放映厅座位数")
     private BigDecimal videohallSeating;
 
+    @TableField(exist = false)
+    private String halltypeName;
+    @TableField(exist = false)
+    private String cinemaName;
 
 }

@@ -5,11 +5,14 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.huyuya.maoyanlast.commonutils.R;
 import com.huyuya.maoyanlast.entity.Cinema;
 import com.huyuya.maoyanlast.entity.Film;
+import com.huyuya.maoyanlast.entity.vo.CinemaDTO;
 import com.huyuya.maoyanlast.entity.vo.CinemaVo;
 import com.huyuya.maoyanlast.mapper.CinemaMapper;
+import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -28,6 +31,19 @@ import java.util.Map;
 public class CinemaController {
     @Resource
     CinemaMapper cinemaMapper;
+
+    @GetMapping("/list")
+    public R getList() {
+        List<Cinema> cinemas = cinemaMapper.selectList(null);
+        ArrayList<CinemaDTO> dtos = new ArrayList<>();
+        for (int i = 0; i < cinemas.size(); i++) {
+            Cinema cinema = cinemas.get(i);
+            CinemaDTO cinemaDTO = new CinemaDTO();
+            BeanUtils.copyProperties(cinema, cinemaDTO);
+            dtos.add(cinemaDTO);
+        }
+        return R.ok().data("cinemas", dtos);
+    }
 
     @PostMapping("/pageCondition/{current}/{limit}")
     public R pageCinema(@PathVariable long current,

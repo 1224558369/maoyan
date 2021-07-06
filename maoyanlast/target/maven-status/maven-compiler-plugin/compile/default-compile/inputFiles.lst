@@ -10,7 +10,7 @@ D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\mapper\HallMapper.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\CinemaServiceService.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\vo\CinemaVo.java
-D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\VideohallController.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\VideoHallController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\FilmController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\Authority.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\mapper\RoleAuthorityMapper.java
@@ -35,10 +35,12 @@ D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\mapper\CinemaServiceMapper.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\impl\CinemaServiceImpl.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\config\MyBatisPlusConfig.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\vo\VideoHallVo.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\config\JacksonConfig.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\HallController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\service\AuthorityService.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\Film.java
+D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\entity\vo\CinemaDTO.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\AuthorityController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\controller\RoleAuthorityController.java
 D:\javawork\springbootTwo\maoyan\maoyanlast\src\main\java\com\huyuya\maoyanlast\mapper\HalltypeMapper.java
