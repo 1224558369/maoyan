@@ -1,6 +1,7 @@
 package com.huyuya.maoyanlast.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.huyuya.maoyanlast.commonutils.R;
 import com.huyuya.maoyanlast.entity.Cinema;
@@ -46,6 +47,19 @@ public class VideoHallController {
         map.put("total", total);
         map.put("rows", records);
         return R.ok().data(map);
+    }
+
+    /**
+     * 条件查询 电影院下的放映厅
+     *@param
+     *@return
+     */
+    @GetMapping("/getCinemaVideoHall/{id}")
+    public R getCinemaVideoHall(@PathVariable Long id) {
+        QueryWrapper<Videohall> wrapper = new QueryWrapper<Videohall>();
+        wrapper.eq("cinema_id",id);
+        List<Videohall> videoHalls = videohallMapper.selectList(wrapper);
+        return R.ok().data("videoHalls", videoHalls);
     }
 
     /**

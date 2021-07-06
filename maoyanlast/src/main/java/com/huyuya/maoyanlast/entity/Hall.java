@@ -36,6 +36,10 @@ public class Hall implements Serializable {
     @ApiModelProperty(value = "电影id")
     private Long filmId;
 
+    @ApiModelProperty(value = "电影名称")
+    private String filmName;
+
+
     @ApiModelProperty(value = "放映厅id")
     private Long videohallId;
 
