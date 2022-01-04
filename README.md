@@ -2,7 +2,7 @@
 仿写猫眼电影
 项目环境
 基于idea开发
-jdk 1.8 + springboot 2.2.1 + Mysql 5.5+
+jdk 1.8 + springboot 2.2.1 + Mysql 5.5
 
 该项目 使用前后台进行管理
 前台电影购票系统（pc端） 使用 springboot+Thymeleaf+Security+MybatisPlus
